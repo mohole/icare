@@ -1,0 +1,120 @@
+// VARIABILI 
+
+$blu-primario: #0066FF;
+$viola-background: rgba(#316EFF, .3);
+$verde-background: rgba(#6ED77F, .3);
+$blu-background: rgba(#007EA7, .3);
+$giallo-parametri: #FCFC03;
+$verde-parametri: #02FD05;
+$blu-parametri: #06FAF8;
+$bianco: #ffffff;
+$nero: #000000;
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 2em 2em;
+    grid-template-areas:
+      "menu parametri parametri paziente"
+      "menu parametri parametri paziente"
+      "menu parametri2 parametri2 paziente"
+      "menu parametri3 parametri4 paziente";
+
+}
+
+  .menu { 
+      grid-area: menu; 
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+  .parametri { grid-area: parametri; }
+  .parametri2 { grid-area: parametri2; }
+  .parametri3 { grid-area: parametri3; }
+  .parametri4 { grid-area: parametri4; }
+  .paziente { grid-area: paziente; }
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    img{
+        width: 30px;
+        height: 30px;
+        margin-right: 2em;
+    }
+    span{
+        margin-top: 2em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        &:hover{
+            font-weight: bold;
+        }
+    }
+    
+    
+}
+
+a{
+    text-decoration: none;
+    color: $nero;
+}
+
+.active{
+    background-color: $viola-background;
+    color: $nero;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.parametri{
+    background-color: $blu-primario;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.parametri2{
+    background-color: $blu-background;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.parametri3{
+    background-color: $viola-background;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.parametri4{
+    background-color: $verde-background;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.paziente{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background-color: $blu-parametri;
+    color: $bianco;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+canvas {
+    padding-top: 5rem;
+}

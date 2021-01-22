@@ -1,0 +1,175 @@
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 2em 2em;
+      grid-template-areas: "menu parametri parametri paziente" "menu parametri parametri paziente" "menu parametri2 parametri2 paziente" "menu parametri3 parametri4 paziente";
+}
+
+.menu {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  grid-area: menu;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.parametri {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: parametri;
+}
+
+.parametri2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: parametri2;
+}
+
+.parametri3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: parametri3;
+}
+
+.parametri4 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: parametri4;
+}
+
+.paziente {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 4;
+  grid-area: paziente;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.navbar img {
+  width: 30px;
+  height: 30px;
+  margin-right: 2em;
+}
+
+.navbar span {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.navbar span:hover {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.active {
+  background-color: rgba(49, 110, 255, 0.3);
+  color: #000000;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.parametri {
+  background-color: #0066FF;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.parametri2 {
+  background-color: rgba(0, 126, 167, 0.3);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.parametri3 {
+  background-color: rgba(49, 110, 255, 0.3);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.parametri4 {
+  background-color: rgba(110, 215, 127, 0.3);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.paziente {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+button {
+  background-color: #06FAF8;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+canvas {
+  padding-top: 5rem;
+}
+/*# sourceMappingURL=style.css.map */
