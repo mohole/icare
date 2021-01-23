@@ -34,7 +34,15 @@
 
 
     <div class="dash-content">
-
+        <div class="line-report">
+            <img src="ecg.png" alt="ecg_img">
+            <div>
+                <p>Report:</p>
+                <a href="#giornaliero">giornaliero</a>
+                <a href="#settimanale">settimanale</a>
+                <a href="#mensile">mensile</a>
+            </div>
+        </div>
         <div class="c-main-ecg">
 
             <div class="main-ecg">
@@ -55,6 +63,7 @@
     
                 <div class="n">
                     <p>120/80</p>
+                    <p>93</p>
                 </div>
             </div>
 
@@ -64,28 +73,49 @@
         
         <div class="little-ecg">
 
-            <div class="ecg">
+            <div class="ecg ventilazione-pressometrica">
                 <p>
-                    <!-- <i class="fas fa-procedures"></i> -->
                     <i class="fas fa-heartbeat"></i>
-                    ECG
+                    Ventilazione pressometrica
                 </p>
+
+                <div class="valori-vp">
+                    <div>
+                        <p> O2 098  Nmc/h</p>
+                        <p> N2O 100  Nmc/h</p>  
+                    </div>
+                    
+                    <div>
+                        <p>27° C</p>
+                        <p>9 BAR</p>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="ecg">
+            <div class="ecg  pompa-infusionale">
                 <p>
-                    <!-- <i class="fas fa-procedures"></i> -->
                     <i class="fas fa-heartbeat"></i>
-                    ECG
+                    Pompa infusionale
                 </p>
+
+                
+                <div class="valori-pi">
+                    <p> RATE 290,0 ml/h</p>
+                </div>
+                
             </div>
 
-            <div class="ecg">
+            <div class="ecg ossigeno">
                 <p>
-                    <!-- <i class="fas fa-procedures"></i> -->
                     <i class="fas fa-heartbeat"></i>
-                    ECG
+                    Ossigeno
                 </p>
+
+                <div class="valori-o">
+                    <p> Spo2 94 ml/h</p>
+                    <p> PR 75</p>
+                </div>
             </div>
 
         </div>
@@ -95,12 +125,32 @@
 
 
     <div class="dash-sidebar">
-        <p class="title">Stanza 12A - Piano 1</p>
-        <img src="rossimario.png" alt="">
-        <h3>Rossi Mario</h3>
-        <h4>Chirurgia generale</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum odit ducimus porro dolorem ad ut nulla neque, voluptates cumque hic. Ipsum quia consequatur modi delectus soluta eligendi, adipisci quos? Ipsam.
-        Nesciunt in itaque soluta ullam vel. </p>
+        <p class="title">Chirurgia generale, Stanza 12A - Piano 1</p>
+        <div class="profilo">
+            <img src="rossimario.png" alt="paziente">
+            <div>
+                <h3>Rossi Mario</h3>
+                <p>12 novembre 1972 </p>
+            </div>
+        </div>
+
+        <p>
+            <i>Il paziente lamentava dolori nella parte bassa dell’addome. 
+            Sono richiesti esami per presunta appendicite.</i>
+        </p>
+       
+        <h4>Diagnosi</h4>
+        <p>Appendicite</p>
+
+        <h4>Allergie</h4>
+        <p>Il paziente dichiara di non avere alcun tipo di allergie.</p>
+
+        <h4>Patologie</h4>
+        <p>Diabete t2 <br> Cardiopatico</p>
+        
+
+        <h4>Status</h4>
+        <p>Il paziente sembra reagire al meglio alle cure a cui è stato sottoposto. Nessun effetto collaterale ai farmaci</p>
         <button type="button">Altre informazioni</button>
     </div>
 

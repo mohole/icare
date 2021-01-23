@@ -11,11 +11,9 @@ body {
   font-family: Poppins, sans-serif;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
   position: relative;
-  overflow: hidden;
-  height: 100vh;
 }
 
 .dash-menu {
@@ -64,6 +62,41 @@ body {
   padding: 40px 60px 60px 300px;
 }
 
+.dash-content .line-report {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dash-content .line-report div {
+  color: #18B1A8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+}
+
+.dash-content .line-report div p {
+  font-weight: bold;
+}
+
+.dash-content .line-report div a {
+  color: gray;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.dash-content .line-report div a:hover {
+  color: black;
+}
+
 .dash-content .c-main-ecg {
   display: -ms-grid;
   display: grid;
@@ -76,11 +109,25 @@ body {
 }
 
 .dash-content .c-main-ecg .main-ecg div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 5px 0 5px 0;
 }
 
 .dash-content .c-main-ecg .main-ecg div p {
   color: white;
+  font-size: 50px;
+}
+
+.dash-content .c-main-ecg .main-ecg div p small {
+  font-size: 25px;
 }
 
 .dash-content .c-main-ecg .main-ecg div a {
@@ -118,6 +165,20 @@ body {
   color: #FCFC03;
 }
 
+.dash-content .c-main-ecg .main-ecg .n {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.dash-content .c-main-ecg .main-ecg .n p {
+  font-size: 30px;
+}
+
 .dash-content .c-main-ecg .display {
   background-color: white;
   height: 100%;
@@ -131,14 +192,34 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+      grid-template-areas: "ventilazione-pressometrica ventilazione-pressometrica" "pompa-infusionale ossigeno";
   gap: 15px;
+}
+
+.dash-content .little-ecg .ventilazione-pressometrica {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: ventilazione-pressometrica;
+}
+
+.dash-content .little-ecg .pompa-infusionale {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: pompa-infusionale;
+}
+
+.dash-content .little-ecg .ossigeno {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: ossigeno;
 }
 
 .dash-content .little-ecg .ecg {
   background-color: #007da769;
   border-radius: 15px;
   padding: 25px;
-  height: 125px;
+  height: 200px;
 }
 
 .dash-content .little-ecg .ecg:hover {
@@ -152,22 +233,79 @@ body {
   font-size: 20px;
 }
 
+.dash-content .little-ecg .ecg .valori-vp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2em;
+  margin: 10px 0 0 0;
+}
+
+.dash-content .little-ecg .ecg .valori-vp p {
+  font-size: 2em;
+}
+
+.dash-content .little-ecg .ecg .valori-pi {
+  margin: 10px 0 0 0;
+}
+
+.dash-content .little-ecg .ecg .valori-pi p {
+  font-size: 2em;
+}
+
+.dash-content .little-ecg .ecg .valori-o {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0 0 20px;
+}
+
+.dash-content .little-ecg .ecg .valori-o p {
+  font-size: 2em;
+}
+
 .dash-sidebar {
   padding: 40px;
   background-color: rgba(210, 210, 210, 0.171);
 }
 
+.dash-sidebar .profilo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.dash-sidebar hr {
+  background-color: #cfcaca;
+  width: 100%;
+  height: 1px;
+}
+
 .dash-sidebar .title {
-  font-style: normal;
   font-weight: bold;
   font-size: 24px;
-  line-height: 20px;
   color: #316EFF;
 }
 
 .dash-sidebar p {
   text-align: justify;
   font-size: 14px;
+  margin: 10px 0;
 }
 
 .dash-sidebar button {
