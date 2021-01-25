@@ -210,11 +210,56 @@ body {
   background-color: #EAF0FF;
 }
 
+.dash-content .container-monitors .pompa-infusionale .title {
+  color: #6F6DC2;
+}
+
+.dash-content .container-monitors .pompa-infusionale .valori {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  width: 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #6F6DC2;
+}
+
+.dash-content .container-monitors .pompa-infusionale .valori .testi {
+  font-size: 20px;
+}
+
+.dash-content .container-monitors .pompa-infusionale .valori .numero {
+  font-size: 60px;
+}
+
 .dash-content .container-monitors .ossigeno {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: ossigeno;
   background-color: #F0FBF2;
+}
+
+.dash-content .container-monitors .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dash-content .container-monitors .title img {
+  max-width: 40px;
+  margin: 0 10px 0 0;
+}
+
+.dash-content .container-monitors .title h4 {
+  font-size: 26px;
 }
 
 .dash-sidebar {

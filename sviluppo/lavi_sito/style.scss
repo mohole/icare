@@ -153,10 +153,43 @@ body{
         .pompa-infusionale{ 
             grid-area: pompa-infusionale;
             background-color: $c-little-monitors-two;
+            .title{
+                    color: $valori;
+                }
+                .valori{
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 5px;
+                width: 70%;
+                align-items: center;
+                 color: $valori;
+                .testi{
+                    font-size: 20px;
+                }
+                .numero{
+                    font-size:60px;
+                }
+                
+            }
         }
         .ossigeno{ 
             grid-area: ossigeno; 
             background-color: $c-little-monitors-three;
+        }
+
+        .title{
+            display: flex;
+            padding: 10px;
+            align-items: center;
+                img{
+                            max-width: 40px;
+                            margin: 0 10px 0 0;
+                }
+                h4{
+                    font-size: 26px
+                }
+
         }
 
     }
