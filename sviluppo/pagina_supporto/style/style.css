@@ -72,6 +72,10 @@ body {
   margin-top: 50px;
 }
 
+.support-box p {
+  font-size: 20px;
+}
+
 .support-box h1,
 .support-box h3 {
   color: #18b1a8;
@@ -83,6 +87,7 @@ body {
 
 .support-box h3 {
   margin-top: 25px;
+  font-size: 30px;
 }
 
 .support-box ul {
@@ -91,6 +96,12 @@ body {
 
 .support-box ul li {
   margin-bottom: 20px;
+}
+
+.support-box ul li section.title {
+  display: inline;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .support-box ul li span {
