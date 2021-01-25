@@ -1,0 +1,421 @@
+:root 
+	--nav-width: 92px 
+	--first-color: #18B1A8 
+	--event-color: #055c56 
+	--sub-color: #18B1A8 
+	--event-color2: #00b8ac 
+	--body-font: 'Montserrat' 
+	--normal-font-size: 1rem 
+	--small-font-size: .875rem 
+	--z-fixed: 100 
+.fc 
+	font-family: var(--body-font) 
+	direction: ltr 
+	text-align: left 
+	table 
+		font-family: var(--body-font) 
+		border-collapse: collapse 
+		border-spacing: 0 
+	.fc-header-space 
+		padding-left: 10px 
+	.ui-resizable-handle 
+		display: block 
+		position: absolute 
+		z-index: 99999 
+		overflow: hidden 
+		font-size: 300% 
+		line-height: 50% 
+	.fc-week-number 
+		width: 22px 
+		text-align: center 
+		div 
+			padding: 0 2px 
+.fc td,
+.fc th 
+	font-family: var(--body-font) 
+	padding: 0 
+	vertical-align: top 
+.fc-header 
+	td 
+		white-space: nowrap 
+		padding: 15px 10px 0px 
+	.fc-button 
+		margin-bottom: 1em 
+		vertical-align: top 
+		margin-right: -1px 
+	.fc-state-down 
+		z-index: 3 
+.fc-header-left 
+	width: 25% 
+	text-align: left 
+.fc-header-center 
+	text-align: center 
+.fc-header-right 
+	width: 25% 
+	text-align: right 
+.fc-header-title 
+	display: inline-block 
+	vertical-align: top 
+	margin-top: -5px 
+	h2 
+		margin-top: 0 
+		white-space: nowrap 
+		font-size: 32px 
+		font-weight: 100 
+		margin-bottom: 10px 
+.fc-header .fc-corner-right,  
+.fc-header .ui-corner-right 
+	margin-right: 0 
+.fc-header .fc-state-hover,
+.fc-header .ui-state-hover 
+	z-index: 2 
+.fc-header .fc-state-active,
+.fc-header .ui-state-active 
+	z-index: 4 
+.fc-content 
+	clear: both 
+	zoom: 1 
+.fc-view 
+	width: 100% 
+	overflow: hidden 
+.fc-widget-content 
+	border: 1px solid #e5e5e5 
+.fc-widget-header 
+	border-bottom: 1px solid #EEE 
+.fc-state-highlight 
+	& > div 
+		& > div 
+			&.fc-day-number 
+				background-color: var(--first-color) 
+				color: #FFFFFF 
+				border-radius: 50% 
+				margin: 4px 
+.fc-cell-overlay 
+	background-color: var(--first-color) 
+	opacity: .3 
+	filter: alpha(opacity=30) 
+.fc-button 
+	position: relative 
+	display: inline-block 
+	padding: 0 .6em 
+	overflow: hidden 
+	height: 1.9em 
+	line-height: 1.9em 
+	white-space: nowrap 
+	cursor: pointer 
+	.fc-icon-wrap 
+		position: relative 
+		float: left 
+		top: 50% 
+	.ui-icon 
+		position: relative 
+		float: left 
+		margin-top: -50% 
+		*margin-top: 0 
+		*top: -50% 
+.fc-state-default 
+	border: 1px solid 
+	border-color: var(--first-color) 
+	color: var(--first-color) 
+	&.fc-corner-left 
+		border-top-left-radius: 4px 
+		border-bottom-left-radius: 4px 
+	&.fc-corner-right 
+		border-top-right-radius: 4px 
+		border-bottom-right-radius: 4px 
+.fc-text-arrow 
+	margin: 0 .4em 
+	font-size: 2em 
+	line-height: 23px 
+	vertical-align: baseline 
+.fc-button-prev .fc-text-arrow,
+.fc-button-next .fc-text-arrow 
+	font-weight: bold 
+.fc-button-month.fc-state-default, .fc-button-agendaWeek.fc-state-default, .fc-button-agendaDay.fc-state-default 
+	min-width: 67px 
+	text-align: center 
+	transition: all 0.2s 
+	-webkit-transition: all 0.2s 
+.fc-state-hover,
+.fc-state-down,
+.fc-state-active,
+.fc-state-disabled 
+	color: #333333 
+	background-color: #FFE3E3 
+.fc-state-hover 
+	color: var(--first-color) 
+	text-decoration: none 
+	background-position: 0 -15px 
+	-webkit-transition: background-position 0.1s linear 
+	-moz-transition: background-position 0.1s linear 
+	-o-transition: background-position 0.1s linear 
+	transition: background-position 0.1s linear 
+.fc-state-down,
+.fc-state-active 
+	background-color: var(--first-color) 
+	background-image: none 
+	outline: 0 
+	color: var(--first-color) 
+.fc-state-disabled 
+	cursor: default 
+	background-image: none 
+	background-color: #FFE3E3 
+	filter: alpha(opacity=65) 
+	box-shadow: none 
+	border: 1px solid #FFE3E3 
+	color: var(--first-color) 
+.fc-event-container 
+	& > * 
+		z-index: 8 
+.fc-event-container > .ui-draggable-dragging,
+.fc-event-container > .ui-resizable-resizing 
+	z-index: 9 
+.fc-event 
+	border: 1px solid #FFF 
+	color: black 
+	font-size: 12px 
+	cursor: default 
+	&.chill 
+		background: var(--event-color2) 
+	&.info 
+		background: var(--event-color2) 
+	&.important 
+		background-color: var(--event-color) 
+	&.success 
+		background: var(--event-color) 
+	&:hover 
+		opacity: 0.7 
+a 
+	&.fc-event 
+		text-decoration: none 
+a.fc-event,
+.fc-event-draggable 
+	cursor: pointer 
+.fc-rtl 
+	.fc-event 
+		text-align: right 
+	.fc-grid 
+		.fc-day-number 
+			float: left 
+		.fc-event-time 
+			float: right 
+.fc-event-inner 
+	width: 100% 
+	height: 100% 
+	overflow: hidden 
+	line-height: 15px 
+.fc-event-time,
+.fc-event-title 
+	color: var(--first-color) 
+	padding: 0 1px 
+.fc-event-hori 
+	border-width: 1px 0 
+	margin-bottom: 1px 
+	.ui-resizable-e 
+		top: 0           !important 
+		right: -3px      !important 
+		width: 7px       !important 
+		height: 100%     !important 
+		cursor: e-resize 
+	.ui-resizable-w 
+		top: 0           !important 
+		left: -3px       !important 
+		width: 7px       !important 
+		height: 100%     !important 
+		cursor: w-resize 
+	.ui-resizable-handle 
+		_padding-bottom: 14px 
+.fc-ltr .fc-event-hori.fc-event-start,
+.fc-rtl .fc-event-hori.fc-event-end 
+	border-left-width: 1px 
+.fc-ltr .fc-event-hori.fc-event-end,
+.fc-rtl .fc-event-hori.fc-event-start 
+	border-right-width: 1px 
+table 
+	&.fc-border-separate 
+		border-collapse: separate 
+.fc-border-separate th,
+.fc-border-separate td 
+	border-width: 1px 0 0 1px 
+.fc-border-separate th.fc-last,
+.fc-border-separate td.fc-last 
+	border-right-width: 1px 
+.fc-border-separate 
+	.fc-week 
+		.fc-first 
+			border-left: 0 
+		.fc-last 
+			border-right: 0 
+	tr 
+		&.fc-last 
+			th 
+				border-bottom-width: 1px 
+				border-color: #cdcdcd 
+				font-size: 16px 
+				font-weight: 300 
+				line-height: 30px 
+.fc-border-separate tbody tr.fc-first td,
+.fc-border-separate tbody tr.fc-first th 
+	border-top-width: 0 
+.fc-grid 
+	th 
+		text-align: center 
+	.fc-day-number 
+		float: right 
+		padding: 0 2px 
+	.fc-other-month 
+		.fc-day-number 
+			opacity: 0.3 
+			filter: alpha(opacity=30) 
+	.fc-day-content 
+		clear: both 
+		color: var(--event-color) 
+		padding: 2px 2px 1px 
+	.fc-event-time 
+		font-weight: bold 
+		color: var(--event-color) 
+.fc-agenda 
+	table 
+		border-collapse: separate 
+	.ui-resizable-resizing 
+		_overflow: hidden 
+.fc-event-vert 
+	&.fc-event-start 
+		border-top-width: 1px 
+		border-top-left-radius: 3px 
+		border-top-right-radius: 3px 
+	&.fc-event-end 
+		border-bottom-width: 1px 
+		border-bottom-left-radius: 3px 
+		border-bottom-right-radius: 3px 
+	.fc-event-time 
+		white-space: nowrap 
+		font-size: 10px 
+	.fc-event-inner 
+		position: relative 
+		z-index: 2 
+	.fc-event-bg 
+		position: absolute 
+		z-index: 1 
+		top: 0 
+		left: 0 
+		width: 100% 
+		height: 100% 
+		background: #fff 
+		opacity: .25 
+		filter: alpha(opacity=25) 
+	.ui-resizable-s 
+		bottom: 0        !important 
+		width: 100%      !important 
+		height: 8px      !important 
+		overflow: hidden !important 
+		line-height: 8px !important 
+		font-size: 11px  !important 
+		font-family: monospace 
+		text-align: center 
+		cursor: s-resize 
+.fc .ui-draggable-dragging .fc-event-bg, 
+.fc-select-helper .fc-event-bg 
+	display: none\9 
+.fc-week 
+	.fc-day 
+		& > div 
+			.fc-day-number 
+				font-size: 15px 
+				margin: 2px 
+				min-width: 19px 
+				padding: 6px 
+				text-align: center 
+		&:hover 
+			.fc-day-number 
+				background-color: #B8B8B8 
+				border-radius: 50% 
+				color: var(--event-color) 
+				transition: background-color 0.2s 
+		&.fc-state-highlight 
+			&:hover 
+				.fc-day-number 
+					background-color: var(--first-color) 
+.fc-sun, .fc-sat 
+	color: #b8b8b8 
+.fc-button-today 
+	border: 1px solid rgba(255,255,255,.0) 
+.fc-view-agendaDay 
+	thead 
+		tr 
+			&.fc-first 
+				.fc-widget-header 
+					text-align: right 
+					padding-right: 10px 
+#calendar 
+	margin-left: auto 
+	margin-right: auto 
+	width: 320px 
+	font-family: 'Lato', sans-serif 
+	margin: 0 auto 
+	width: 900px 
+	background-color: #FFFFFF 
+	border-radius: 6px 
+	box-shadow: 0 1px 2px #C3C3C3 
+#calendar_weekdays 
+	div 
+		display: inline-block 
+		vertical-align: top 
+#calendar_content, #calendar_weekdays, #calendar_header 
+	position: relative 
+	width: 320px 
+	overflow: hidden 
+	float: left 
+	z-index: 10 
+#calendar_weekdays div, #calendar_content div 
+	width: 40px 
+	height: 40px 
+	overflow: hidden 
+	text-align: center 
+	background-color: #FFFFFF 
+	color: #787878 
+#calendar_content 
+	-webkit-border-radius: 0px 0px 12px 12px 
+	-moz-border-radius: 0px 0px 12px 12px 
+	border-radius: 0px 0px 12px 12px 
+	div 
+		float: left 
+		&:hover 
+			background-color: #F8F8F8 
+		&.blank 
+			background-color: #E8E8E8 
+		&.today 
+			color: var(--event-color) 
+#calendar_header, #calendar_content div.today 
+	zoom: 1 
+	filter: alpha(opacity=70) 
+	opacity: 0.7 
+#calendar_header 
+	width: 100% 
+	height: 37px 
+	text-align: center 
+	background-color: #FF6860 
+	padding: 18px 0 
+	-webkit-border-radius: 12px 12px 0px 0px 
+	-moz-border-radius: 12px 12px 0px 0px 
+	border-radius: 12px 12px 0px 0px 
+	h1 
+		font-size: 1.5em 
+		color: var(--event-color) 
+		float: left 
+		width: 70% 
+.external-event 
+	margin: 10px 0 
+	padding: 2px 4px 
+	background: #3366CC 
+	color: rgb(0, 0, 0) 
+	font-size: .85em 
+	cursor: pointer 
+#external-events 
+	p 
+		margin: 1.5em 0 
+		font-size: 11px 
+		color: #666 
+		input 
+			margin: 0 
+			vertical-align: middle 
