@@ -137,10 +137,8 @@ body{
         }
     }
 
-
-    // SCHERMI PICCOLINI
-    .little-ecg{
-        margin: 15px 0 0 0;
+    // piccoli schermi
+    .container-monitors{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
@@ -148,54 +146,79 @@ body{
         "pompa-infusionale ossigeno";
         gap: 15px;
         // grid areas nomi
-        .ventilazione-pressometrica{ grid-area: ventilazione-pressometrica;}
-        .pompa-infusionale{ grid-area: pompa-infusionale;}
-        .ossigeno{ grid-area: ossigeno;}
-
-
-        .ecg{
-            background-color: #007da769;
-            border-radius: 15px; 
-            padding: 25px;
-            height: 200px;
-            &:hover{
-            background-color: $primary-blu;
-            transition: all 0.5s ease;
-            }
-            p{
-                // color: #18B1A8;
-                color: $white;
-                font-size: 20px;
-            }
-
-            .valori-vp{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                padding: 0 2em;
-                margin: 10px 0 0 0;
-                p{
-                    font-size: 2em;
-                }
-            }
-
-            .valori-pi{
-                margin: 10px 0 0 0;
-                p{
-                    font-size: 2em;
-                } 
-            }
-            .valori-o{
-                display: flex;
-                flex-direction: column;
-                margin: 10px 0 0 20px;
-                p{
-                    font-size: 2em;
-                }
-            }
+        .ventilazione-pressometrica{ 
+            grid-area: ventilazione-pressometrica;
+            background-color: $c-little-monitors;
         }
-        
+        .pompa-infusionale{ 
+            grid-area: pompa-infusionale;
+            background-color: $c-little-monitors-two;
+        }
+        .ossigeno{ 
+            grid-area: ossigeno; 
+            background-color: $c-little-monitors-three;
+        }
+
     }
+
+    // SCHERMI PICCOLINI
+    // .little-ecg{
+    //     margin: 15px 0 0 0;
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr;
+    //     grid-template-areas: 
+    //     "ventilazione-pressometrica ventilazione-pressometrica"
+    //     "pompa-infusionale ossigeno";
+    //     gap: 15px;
+    //     // grid areas nomi
+    //     .ventilazione-pressometrica{ grid-area: ventilazione-pressometrica;}
+    //     .pompa-infusionale{ grid-area: pompa-infusionale;}
+    //     .ossigeno{ grid-area: ossigeno;}
+
+
+    //     .ecg{
+    //         background-color: #007da769;
+    //         border-radius: 15px; 
+    //         padding: 25px;
+    //         height: 200px;
+    //         &:hover{
+    //         background-color: $primary-blu;
+    //         transition: all 0.5s ease;
+    //         }
+    //         p{
+    //             // color: #18B1A8;
+    //             color: $white;
+    //             font-size: 20px;
+    //         }
+
+    //         .valori-vp{
+    //             display: flex;
+    //             flex-direction: row;
+    //             justify-content: space-between;
+    //             padding: 0 2em;
+    //             margin: 10px 0 0 0;
+    //             p{
+    //                 font-size: 2em;
+    //             }
+    //         }
+
+    //         .valori-pi{
+    //             margin: 10px 0 0 0;
+    //             p{
+    //                 font-size: 2em;
+    //             } 
+    //         }
+    //         .valori-o{
+    //             display: flex;
+    //             flex-direction: column;
+    //             margin: 10px 0 0 20px;
+    //             p{
+    //                 font-size: 2em;
+    //             }
+    //         }
+    //     }
+        
+    // }
     
 }
 

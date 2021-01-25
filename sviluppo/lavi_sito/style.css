@@ -186,8 +186,7 @@ body {
   border-radius: 20px;
 }
 
-.dash-content .little-ecg {
-  margin: 15px 0 0 0;
+.dash-content .container-monitors {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -196,83 +195,26 @@ body {
   gap: 15px;
 }
 
-.dash-content .little-ecg .ventilazione-pressometrica {
+.dash-content .container-monitors .ventilazione-pressometrica {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: ventilazione-pressometrica;
+  background-color: #E5F2F6;
 }
 
-.dash-content .little-ecg .pompa-infusionale {
+.dash-content .container-monitors .pompa-infusionale {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: pompa-infusionale;
+  background-color: #EAF0FF;
 }
 
-.dash-content .little-ecg .ossigeno {
+.dash-content .container-monitors .ossigeno {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: ossigeno;
-}
-
-.dash-content .little-ecg .ecg {
-  background-color: #007da769;
-  border-radius: 15px;
-  padding: 25px;
-  height: 200px;
-}
-
-.dash-content .little-ecg .ecg:hover {
-  background-color: #0066FF;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.dash-content .little-ecg .ecg p {
-  color: white;
-  font-size: 20px;
-}
-
-.dash-content .little-ecg .ecg .valori-vp {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 2em;
-  margin: 10px 0 0 0;
-}
-
-.dash-content .little-ecg .ecg .valori-vp p {
-  font-size: 2em;
-}
-
-.dash-content .little-ecg .ecg .valori-pi {
-  margin: 10px 0 0 0;
-}
-
-.dash-content .little-ecg .ecg .valori-pi p {
-  font-size: 2em;
-}
-
-.dash-content .little-ecg .ecg .valori-o {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 10px 0 0 20px;
-}
-
-.dash-content .little-ecg .ecg .valori-o p {
-  font-size: 2em;
+  background-color: #F0FBF2;
 }
 
 .dash-sidebar {
