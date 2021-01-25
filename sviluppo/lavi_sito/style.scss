@@ -1,10 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    list-style: none;
-}
+@import 'reset';
+@import 'variables';
+
 
 body{
     font-family: Poppins, sans-serif;
@@ -41,7 +37,7 @@ body{
                 }
             }
             #active{
-                color: black;
+                color: $black;
                 background-color: #6e6dc23b;
                 border-radius: 5px;
             } 
@@ -69,7 +65,7 @@ body{
                 margin-left:10px;
                 text-decoration: none;
                 &:hover{
-                color: black;
+                color: $black;
                 }
             }
             
@@ -79,7 +75,7 @@ body{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
-        background-color: #0066FF;
+        background-color: $primary-blu;
         padding: 50px;
         border-radius: 30px;        
         .main-ecg{
@@ -90,7 +86,7 @@ body{
                 align-items: center;
                 padding: 5px 0 5px 0;
                 p{
-                    color:white;
+                    color:$white;
                     font-size: 50px;
                     small{
                         font-size: 25px;
@@ -98,7 +94,7 @@ body{
                 }
                 a{
                     text-decoration: none;
-                    color: white;
+                    color: $white;
                 } 
 
                 .dismiss:hover{
@@ -108,21 +104,21 @@ body{
             }
             .hr{
                 p{
-                    color: #02FD05;
+                    color: $primary-green;
                 }    
-                border-bottom: 1px solid white;
+                border-bottom: 1px solid $white;
             }
             .spo{
                 p{
-                    color: #06FAF8;
+                    color: $primary-cyan;
                 }
-                border-bottom: 1px solid white;
+                border-bottom: 1px solid $white;
             }
             .resp{
                 p{
-                    color: #FCFC03;
+                    color: $primary-yellow;
                 }
-                border-bottom: 1px solid white;
+                border-bottom: 1px solid $white;
             }
             .n{
                 display: flex;
@@ -134,7 +130,7 @@ body{
 
         }
         .display{
-            background-color: white;
+            background-color: $white;
             height: 100%;
             width: 100%;
             border-radius: 20px; 
@@ -163,12 +159,12 @@ body{
             padding: 25px;
             height: 200px;
             &:hover{
-            background-color: #0066FF;
+            background-color: $primary-blu;
             transition: all 0.5s ease;
             }
             p{
                 // color: #18B1A8;
-                color: white;
+                color: $white;
                 font-size: 20px;
             }
 
@@ -228,9 +224,9 @@ body{
     }
 
     button{
-        background-color: #0066FF;
+        background-color: $primary-blu;
         border-radius: 25px;
-        color: white;
+        color: $white;
         padding: 15px;
         text-align: center;
         text-decoration: none;
