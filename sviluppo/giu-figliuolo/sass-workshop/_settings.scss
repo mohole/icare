@@ -1,0 +1,41 @@
+.settings {
+  %strong-text {
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+  %f-column-space-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__header {
+    @extend %strong-text;
+    margin-bottom: 1rem;
+  }
+  &__container {
+    display: flex;
+    padding: 1rem 0;
+    height: 50vh;
+    min-height: 380px;
+    max-height: 500px;
+  }
+  &__single {
+    width: 100%;
+    display: flex;
+    padding: 1rem 1rem 1rem 0.4rem;
+  }
+  &__options {
+    @extend %f-column-space-between;
+  }
+  &__values {
+    @extend %f-column-space-between;
+    padding-left: 2.5rem;
+  }
+  &__option {
+    @extend %strong-text;
+  }
+}
+
+.accent {
+  color: #18b1a8;
+}

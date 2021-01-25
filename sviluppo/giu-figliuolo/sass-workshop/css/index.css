@@ -1,0 +1,49 @@
+.settings .settings__header, .settings .settings__option {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.settings .settings__options, .settings .settings__values {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.settings__header {
+  margin-bottom: 1rem;
+}
+
+.settings__container {
+  display: flex;
+  padding: 1rem 0;
+  height: 50vh;
+  min-height: 380px;
+  max-height: 500px;
+}
+
+.settings__single {
+  width: 100%;
+  display: flex;
+  padding: 1rem 1rem 1rem 0.4rem;
+}
+
+.settings__values {
+  padding-left: 2.5rem;
+}
+
+.accent {
+  color: #18b1a8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.settings {
+  max-width: 1000px;
+  margin-left: 20rem;
+  margin-top: 7rem;
+}
+/*# sourceMappingURL=index.css.map */
