@@ -7,6 +7,29 @@
 
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+.dash-content .container-monitors .ventilazione-pressometrica .vpcontent {
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    /* width: 70%; */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #6F6DC2;
+    text-align: center;
+}
+.dash-content .container-monitors .valori .testi {
+  font-size: 20px;
+}
+
+.dash-content .container-monitors .valori .numero {
+  font-size: 60px;
+}
+    </style>
 </head>
 <body>
 
@@ -126,9 +149,28 @@
                     <img src="electrocardiogram.svg" alt="ventilazione">
                     <h4>Ventilazione pressometrica</h4>
                 </div>
-                <div class="valori">
-
+                <div class="vpcontent">
+                    <div class="valori">
+                        <span class="testi">O2</span>
+                        <span class="numero">0,98</span>
+                        <span class="">Nmc/h</span>
+                    </div>
+                    <div class="valori">
+                        <span class="testi">N2O</span>
+                        <span class="numero">100</span>
+                        <span class="">ml/h</span>
+                    </div>
                 </div>
+                <!-- seconda riga vpcontent -->
+                <div class="vpcontent">
+                    <div class="valori">
+                        <span class="numero">27°C</span>
+                    </div>
+                    <div class="valori">
+                        <span class="numero">9 BAR</span>
+                    </div>
+                </div>
+               
             </div>
             <div class="pompa-infusionale">
                 <div class="title">
