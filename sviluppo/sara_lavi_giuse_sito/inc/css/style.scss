@@ -312,3 +312,104 @@ body{
         }
     }
 }
+
+// reparti
+
+body.reparto{
+    font-family: Poppins, sans-serif;
+    height: 100%;
+    display: block;
+
+}
+
+.reparti{
+    width: 100%;
+    height: 100%;
+    padding: 40px 60px 60px 300px;
+    margin: 10px 0 0 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "pediatria pediatria"
+        "neurologia cardiologia";
+        column-gap: 20px;
+    
+    .pediatria{
+        padding: 20px;
+        height: 250px;
+        border-radius: 20px;
+        grid-area: pediatria;
+        background-color: $valori;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        &:hover{
+            opacity: 0.9;
+            transition: all ease 0.5s;
+            cursor: pointer;
+        }
+        h4{
+           font-size: 30px;
+            
+        }
+        
+    }
+    .cardiologia{
+        padding: 20px;
+        height: 250px;
+        border-radius: 20px;
+        margin: 20px 0 0 0;
+        grid-area: cardiologia;
+        background-color: $valori;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        &:hover{
+            opacity: 0.9;
+            transition: all ease 0.5s;
+            cursor: pointer;
+        }
+        h4{
+            font-size: 30px;
+             
+         }
+        
+    }
+    .neurologia{
+        padding: 20px;
+        height: 250px;
+        border-radius: 20px;
+        margin: 20px 0 0 0;
+        grid-area: neurologia;
+        background-color: $valori;
+         display: flex;
+        align-items: center; 
+        justify-content: center;
+        &:hover{
+            opacity: 0.9;
+            transition: all ease 0.5s;
+            cursor: pointer;
+        }
+        h4{
+            font-size: 30px;
+             
+         }
+        
+    }
+}
+
+@media (max-width: 1050px){
+    .reparti{
+        width: 100%;
+        height: 100%;
+        padding: 40px 60px 60px 300px;
+        margin: 10px 0 0 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "pediatria"
+            "neurologia"
+            "cardiologia";
+            column-gap: 20px;
+    }
+}
