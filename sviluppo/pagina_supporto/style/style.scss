@@ -89,3 +89,12 @@ body {
     }
   }
 }
+@media (max-width: 1200px) {
+  body {
+    display: inherit;
+  }
+  .support-box {
+    width: auto;
+    margin-right: 20px;
+  }
+}
