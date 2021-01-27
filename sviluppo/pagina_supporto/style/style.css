@@ -109,4 +109,14 @@ body {
   color: #18b1a8;
   margin-right: 20px;
 }
+
+@media (max-width: 1200px) {
+  body {
+    display: inherit;
+  }
+  .support-box {
+    width: auto;
+    margin-right: 20px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
