@@ -145,13 +145,7 @@ body{
 
     // piccoli schermi
     .container-monitors{
-        margin: 20px 0 0 0 ;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "ventilazione-pressometrica ventilazione-pressometrica"
-        "pompa-infusionale ossigeno";
-        gap: 20px;
+        
         .valori{
             .testi{
             font-size: 20px;
@@ -162,6 +156,7 @@ body{
         } 
         // grid areas nomi
         .ventilazione-pressometrica{ 
+            margin: 20px 0 0 0;
             border-radius: 20px;
             grid-area: ventilazione-pressometrica;
             background-color: $c-little-monitors;
@@ -183,6 +178,7 @@ body{
 
         }
         .pompa-infusionale{ 
+            margin: 20px 0 0 0;
             border-radius: 20px;
             grid-area: pompa-infusionale;
             background-color: $c-little-monitors-two;
@@ -207,6 +203,7 @@ body{
             }
         }
         .ossigeno{ 
+            margin: 20px 0 0 0;
             border-radius: 20px;
             grid-area: ossigeno; 
             background-color: $c-little-monitors-three;
@@ -286,4 +283,32 @@ body{
             }
     }
     
+}
+
+@media (max-width: 1200px){
+    .dash-sidebar{
+        display: none;
+    }
+    .dash-content{
+        width: 100%;
+    }
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1050px){
+    .container-monitors{
+        margin: 10px 0 0 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "ventilazione-pressometrica ventilazione-pressometrica"
+        "pompa-infusionale ossigeno";
+        column-gap: 20px;
+        .ventilazione-pressometrica, .pompa-infusionale, .ossigeno{
+            margin: 0;
+        }
+    }
 }

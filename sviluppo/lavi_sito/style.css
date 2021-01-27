@@ -193,16 +193,6 @@ body {
   border-radius: 20px;
 }
 
-.dash-content .container-monitors {
-  margin: 20px 0 0 0;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "ventilazione-pressometrica ventilazione-pressometrica" "pompa-infusionale ossigeno";
-  gap: 20px;
-}
-
 .dash-content .container-monitors .valori .testi {
   font-size: 20px;
 }
@@ -212,10 +202,8 @@ body {
 }
 
 .dash-content .container-monitors .ventilazione-pressometrica {
+  margin: 20px 0 0 0;
   border-radius: 20px;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: ventilazione-pressometrica;
   background-color: #E5F2F6;
   color: #0066FF;
@@ -237,9 +225,8 @@ body {
 }
 
 .dash-content .container-monitors .pompa-infusionale {
+  margin: 20px 0 0 0;
   border-radius: 20px;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: pompa-infusionale;
   background-color: #EAF0FF;
 }
@@ -271,9 +258,8 @@ body {
 }
 
 .dash-content .container-monitors .ossigeno {
+  margin: 20px 0 0 0;
   border-radius: 20px;
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: ossigeno;
   background-color: #F0FBF2;
   color: #18b1a8;
@@ -362,5 +348,36 @@ body {
   opacity: 0.9;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+@media (max-width: 1200px) {
+  .dash-sidebar {
+    display: none;
+  }
+  .dash-content {
+    width: 100%;
+  }
+  body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1050px) {
+  .container-monitors {
+    margin: 10px 0 0 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "ventilazione-pressometrica ventilazione-pressometrica" "pompa-infusionale ossigeno";
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+  .container-monitors .ventilazione-pressometrica, .container-monitors .pompa-infusionale, .container-monitors .ossigeno {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
