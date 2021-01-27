@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+.container{
+    margin: 0 3em 0 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "dash-menu dash-content";
+}
+.dash-menu{
+    grid-area: dash-menu;
+    position: fixed;
+    height: 100vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .logo:hover{
+        opacity: 0.9;
+        transition: all 0.5s ease;
+    }
+    nav{
+        ul{
+            li {
+                list-style: none; 
+                padding: 15px;
+                    
+                a {
+                    color: #747474;
+                    font-size: 18px;
+                    text-decoration: none;
+                }
+                &:hover{
+                    font-weight: bold;
+                    transition: all 0.5s ease;
+                }
+            }
+            #active{
+                color: black;
+                background-color: #6e6dc23b;
+                border-radius: 5px;
+            } 
+        }
+    }
+}
+.dash-content { grid-area: dash-content; }
+.tabella-pazienti{
+    display:flex; 
+    justify-content: space-between; 
+    margin: 3em auto ;
+    h5{
+        padding: 0 5em 0 0;;
+    }
+}
+.card-paziente{
+    display: flex;
+    background-color:#E7E8EA; 
+    justify-content: space-between;
+    padding: 0 15px; 
+    margin: 5px 0 15px 0;
+    align-items: center;
+    img{
+        width: 50px;
+        height: 50px;
+    }
+}
+$breakpoint-tablet: 1024px;
+@media (max-width: $breakpoint-tablet) {
+  .lista-pazienti{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+      .card-paziente{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: auto;
+        background-color:#E7E8EA; 
+        align-items: center;
+        margin:5px;
+        padding: 1em;
+        border-radius: 10px;
+        img{
+          width: 50px;
+          height: 50px;
+        }
+        p{
+          margin: 0.5em 0 ;
+        }
+      }
+  }
+}
