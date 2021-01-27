@@ -147,6 +147,7 @@ body {
 
 .dash-content .c-main-ecg .main-ecg .hr p {
   color: #02FD05;
+  font-size: 60px;
 }
 
 .dash-content .c-main-ecg .main-ecg .spo {
@@ -155,6 +156,7 @@ body {
 
 .dash-content .c-main-ecg .main-ecg .spo p {
   color: #06FAF8;
+  font-size: 60px;
 }
 
 .dash-content .c-main-ecg .main-ecg .resp {
@@ -163,6 +165,7 @@ body {
 
 .dash-content .c-main-ecg .main-ecg .resp p {
   color: #FCFC03;
+  font-size: 60px;
 }
 
 .dash-content .c-main-ecg .main-ecg .n {
@@ -173,6 +176,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.dash-content .c-main-ecg .main-ecg .n .n-uno {
+  font-size: 45px;
 }
 
 .dash-content .c-main-ecg .main-ecg .n p {
@@ -187,23 +194,50 @@ body {
 }
 
 .dash-content .container-monitors {
+  margin: 20px 0 0 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "ventilazione-pressometrica ventilazione-pressometrica" "pompa-infusionale ossigeno";
-  gap: 15px;
+  gap: 20px;
+}
+
+.dash-content .container-monitors .valori .testi {
+  font-size: 20px;
+}
+
+.dash-content .container-monitors .valori .numero {
+  font-size: 60px;
 }
 
 .dash-content .container-monitors .ventilazione-pressometrica {
+  border-radius: 20px;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: ventilazione-pressometrica;
   background-color: #E5F2F6;
+  color: #0066FF;
+}
+
+.dash-content .container-monitors .ventilazione-pressometrica .vpcontent {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  /* width: 70%; */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #0066FF;
+  text-align: center;
 }
 
 .dash-content .container-monitors .pompa-infusionale {
+  border-radius: 20px;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: pompa-infusionale;
@@ -237,10 +271,27 @@ body {
 }
 
 .dash-content .container-monitors .ossigeno {
+  border-radius: 20px;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: ossigeno;
   background-color: #F0FBF2;
+  color: #18b1a8;
+}
+
+.dash-content .container-monitors .ossigeno .vpcontent {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  /* width: 70%; */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #18b1a8;
+  text-align: center;
 }
 
 .dash-content .container-monitors .title {

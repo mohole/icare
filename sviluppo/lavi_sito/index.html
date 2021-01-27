@@ -62,7 +62,7 @@
                 </div>
     
                 <div class="n">
-                    <p>120/80</p>
+                    <p class="n-uno">120/80</p>
                     <p>93</p>
                 </div>
             </div>
@@ -71,54 +71,7 @@
 
         </div>
         
-        <!-- <div class="little-ecg">
-
-            <div class="ecg ventilazione-pressometrica">
-                <p>
-                    <i class="fas fa-heartbeat"></i>
-                    Ventilazione pressometrica
-                </p>
-
-                <div class="valori-vp">
-                    <div>
-                        <p> O2 098  Nmc/h</p>
-                        <p> N2O 100  Nmc/h</p>  
-                    </div>
-                    
-                    <div>
-                        <p>27° C</p>
-                        <p>9 BAR</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="ecg  pompa-infusionale">
-                <p>
-                    <i class="fas fa-heartbeat"></i>
-                    Pompa infusionale
-                </p>
-
-                
-                <div class="valori-pi">
-                    <p> RATE 290,0 ml/h</p>
-                </div>
-                
-            </div>
-
-            <div class="ecg ossigeno">
-                <p>
-                    <i class="fas fa-heartbeat"></i>
-                    Ossigeno
-                </p>
-
-                <div class="valori-o">
-                    <p> Spo2 94 ml/h</p>
-                    <p> PR 75</p>
-                </div>
-            </div>
-
-        </div> -->
+        
         <div class="container-monitors">
             
             <div class="ventilazione-pressometrica">
@@ -126,9 +79,28 @@
                     <img src="electrocardiogram.svg" alt="ventilazione">
                     <h4>Ventilazione pressometrica</h4>
                 </div>
-                <div class="valori">
-
+                <div class="vpcontent">
+                    <div class="valori">
+                        <span class="testi">O2</span>
+                        <span class="numero">0,98</span>
+                        <span class="">Nmc/h</span>
+                    </div>
+                    <div class="valori">
+                        <span class="testi">N2O</span>
+                        <span class="numero">100</span>
+                        <span class="">ml/h</span>
+                    </div>
                 </div>
+                <!-- seconda riga vpcontent -->
+                <div class="vpcontent">
+                    <div class="valori">
+                        <span class="numero">27°C</span>
+                    </div>
+                    <div class="valori">
+                        <span class="numero">9 BAR</span>
+                    </div>
+                </div>
+               
             </div>
             <div class="pompa-infusionale">
                 <div class="title">
@@ -139,16 +111,24 @@
                     <p class="testi">RATE</p>
                     <p class="numero">290,0</p>
                     <p class="">ml/h</p>
-                    
                 </div>
             </div>
+            
             <div class="ossigeno">
                 <div class="title">
                     <img src="oxygen-mask.svg" alt="ossigeno">
                     <h4>Ossigeno</h4>
                 </div>
-                <div class="valori">
-                    
+
+                <div class="vpcontent">
+                    <div class="valori">
+                        <span class="testi">Spo2</span>
+                        <span class="numero">94</span>
+                    </div>
+                    <div class="valori">
+                        <span class="testi">PR</span>
+                        <span class="numero">75</span>
+                    </div>
                 </div>
             </div>
         </div>
