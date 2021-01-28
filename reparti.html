@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- X-UA per compatibilità di alcuni aspetti di internet explorer-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- autore del sito-->
+    <meta name="author" content="WEB2A">
+    <!--meta description-->
+    <meta name="description" content="School Workshop - prototype of a dashboard medical web application">
+    <!--meta keywords-->
+    <meta name="keywords" content="healthcare, dashboard, hospital, departments">
+    <!--favicon simbolino vicino al nome del sito nella barra in alto della scheda-->
+    <link rel="icon" href="inc/img/favicon.png" type="image/png" alt="i-care favicon"> 
+
+    <title>I-Care - Reparti</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="inc/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="inc/css/style.css">
+</head>
+<body class="reparto">
+    
+    <div class="dash-menu">
+
+        <div class="logo">
+            <a href="index.html" alt="logo i-care"><img src="inc/img/logo.png" alt="logo_icare"></a>
+        </div>
+
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html" alt="Dashboard"><i class="far fa-clipboard"></i> Dashboard</a></li>
+                    <li><a href="#pazienti.html" alt="Pazienti"><i class="fas fa-user-injured"></i> Pazienti</a></li>
+                    <li id="active"><a href="reparti.html" alt="Reparti"><i class="far fa-building"></i> Reparti</a></li>
+                    <li><a href="#chat.html" alt="Chat"><i class="far fa-comments"></i> Chat</a></li>
+                    <li><a href="#impostazioni.html" alt="Impostazioni"><i class="fas fa-cog"></i> Impostazioni</a></li>
+                    <li><a href="#supporto.html" alt="Supporto"><i class="far fa-question-circle"></i> Supporto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+
+
+    <div class="reparti">
+        <div class="pediatria">
+            <h4><i class="fas fa-baby-carriage"></i> Pediatria neonatale</h4>
+        </div>
+        <div class="neurologia">
+            <h4><i class="fas fa-brain"></i> Neurologia</h4>
+        </div>
+        <div class="cardiologia">
+            <h4><i class="fas fa-heartbeat"></i> Cardiologia</h4>
+        </div>
+    </div>
+</body>
+</html>

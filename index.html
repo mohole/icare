@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- X-UA per compatibilità di alcuni aspetti di internet explorer-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- autore del sito-->
+    <meta name="author" content="WEB2A">
+    <!--meta description-->
+    <meta name="description" content="School Workshop - prototype of a dashboard medical web application">
+    <!--meta keywords-->
+    <meta name="keywords" content="healthcare, dashboard, hospital, departments">
+    <!--favicon simbolino vicino al nome del sito nella barra in alto della scheda-->
+    <link rel="icon" href="inc/img/favicon.png" type="image/png" alt="i-care favicon"> 
+
+    <title>I-Care - Dashboard</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="inc/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="inc/css/style.css">
+</head>
+
+<body>
+
+    <div class="dash-menu">
+
+        <div class="logo">
+            <a href="index.html" alt="logo i-care"><img src="inc/img/logo.png" alt="logo_icare"></a>
+        </div>
+
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li id="active"><a href="index.html" alt="Dashboard"><i class="far fa-clipboard"></i> Dashboard</a></li>
+                    <li><a href="#pazienti.html" alt="Pazienti"><i class="fas fa-user-injured"></i> Pazienti</a></li>
+                    <li><a href="reparti.html" alt="Reparti"><i class="far fa-building"></i> Reparti</a></li>
+                    <li><a href="#chat.html" alt="Chat"><i class="far fa-comments"></i> Chat</a></li>
+                    <li><a href="#impostazioni.html" alt="Impostazioni"><i class="fas fa-cog"></i> Impostazioni</a></li>
+                    <li><a href="#supporto.html" alt="Supporto"><i class="far fa-question-circle"></i> Supporto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+
+
+
+    <div class="dash-content">
+        <div class="line-report">
+            <img src="inc/img/ecg.png" alt="ecg_img">
+            <div>
+                <p>Report:</p>
+                <a href="#giornaliero">giornaliero</a>
+                <a href="#settimanale">settimanale</a>
+                <a href="#mensile">mensile</a>
+            </div>
+        </div>
+        <div class="c-main-ecg">
+
+            <div class="main-ecg">
+                <div class="hr">
+                    <p>60 <small>HR</small></p>
+                    <a href="#" class="dismiss" alt="dismiss"><i class="far fa-bell-slash"></i> DISMISS</a>
+                </div>
+    
+                <div class="spo">
+                    <p>98 <small>SPO2</small></p>
+                   <a href="#" class="dismiss" alt="dismiss"><i class="far fa-bell-slash"></i> DISMISS</a>
+                </div>
+    
+                <div class="resp">
+                    <p>20 <small>RESP</small></p>
+                   <a href="#" class="dismiss" alt="dismiss"><i class="far fa-bell-slash"></i> DISMISS</a>
+                </div>
+    
+                <div class="n">
+                    <span>120/80</span>
+                    <span>93</span>
+                </div>
+            </div>
+
+            <div class="display">
+                    <p><canvas id="myChart" height="100%"></canvas></p>
+                    <p><canvas id="myChart_2" height="100%"></canvas></p>
+                    <p><canvas id="myChart_3" height="100%"></canvas></p>
+            </div>
+
+        </div>
+        
+        
+        <div class="container-monitors">
+            
+            <div class="ventilazione-pressometrica">
+                <div class="title">
+                    <img src="inc/img/electrocardiogram.png" alt="ventilazione">
+                    <h4>Ventilazione pressometrica</h4>
+                </div>
+                <div class="vpcontent">
+                    <div class="valori">
+                        <span class="testi">O2</span>
+                        <span class="numero">0,98</span>
+                        <span>Nmc/h</span>
+                    </div>
+                    <div class="valori">
+                        <span class="testi">N2O</span>
+                        <span class="numero">100</span>
+                        <span>ml/h</span>
+                    </div>
+                </div>
+                <!-- seconda riga vpcontent -->
+                <div class="vpcontent">
+                    <div class="valori">
+                        <span class="numero">27°C</span>
+                    </div>
+                    <div class="valori">
+                        <span class="numero">9 BAR</span>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="pompa-infusionale">
+                <div class="title">
+                    <img src="inc/img/ventilation.png" alt="pompainfusionale">
+                    <h4>Pompa infusionale</h4>
+                </div>
+                <div class="valori">
+                    <p class="testi">RATE</p>
+                    <p class="numero">290,0</p>
+                    <p>ml/h</p>
+                </div>
+            </div>
+
+            <div class="ossigeno">
+                <div class="title">
+                    <img src="inc/img/oxygen-mask.png" alt="ossigeno">
+                    <h4>Ossigeno</h4>
+                </div>
+
+                <div class="vpcontent">
+                    <div class="valori">
+                        <span class="testi">Spo2</span>
+                        <span class="numero">94</span>
+                    </div>
+                    <div class="valori">
+                        <span class="testi">PR</span>
+                        <span class="numero">75</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="dash-sidebar">
+        <p class="title">Chirurgia generale, Stanza 12A - Piano 1</p>
+        <div class="profilo">
+            <img src="inc/img/rossimario.png" alt="paziente">
+            <div>
+                <h3>Rossi Mario</h3>
+                <p>12 novembre 1960 </p>
+            </div>
+        </div>
+
+        <p>
+            <i>Il paziente lamentava dolori nella parte bassa dell’addome. 
+            Sono richiesti esami per presunta appendicite.</i>
+        </p>
+       
+        <h4>Diagnosi</h4>
+        <p>Appendicite</p>
+
+        <h4>Allergie</h4>
+        <p>Il paziente dichiara di non avere alcun tipo di allergie.</p>
+
+        <h4>Patologie</h4>
+        <p>Diabete t2 <br> Cardiopatico</p>
+        
+
+        <h4>Status</h4>
+        <p>Il paziente sembra reagire al meglio alle cure a cui è stato sottoposto. Nessun effetto collaterale ai farmaci</p>
+        <button type="button" alt="altre informazioni">Altre informazioni</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="./inc/scripts/index.js"></script>
+</body>
+</html>
