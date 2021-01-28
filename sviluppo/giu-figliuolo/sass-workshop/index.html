@@ -4,32 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Workshop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
+    <div class="dash-menu">
+
+      <div class="logo">
+          <img src="inc/img/logo.png" alt="">
+      </div>
+
+      <div class="dash-menu">
+        <div class="logo">
+            <a href="index.html" alt="logo i-care"><img src="inc/img/logo.png" alt="logo_icare"></a>
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li id="active"><a href="index.html" alt="Dashboard"><i class="far fa-clipboard"></i> Dashboard</a></li>
+                    <li><a href="#pazienti.html" alt="Pazienti"><i class="fas fa-user-injured"></i> Pazienti</a></li>
+                    <li><a href="reparti.html" alt="Reparti"><i class="far fa-building"></i> Reparti</a></li>
+                    <li><a href="#chat.html" alt="Chat"><i class="far fa-comments"></i> Chat</a></li>
+                    <li><a href="#impostazioni.html" alt="Impostazioni"><i class="fas fa-cog"></i> Impostazioni</a></li>
+                    <li><a href="#supporto.html" alt="Supporto"><i class="far fa-question-circle"></i> Supporto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+  </div>
+
     <section class="settings">
       <p class="settings__header">impostazioni</p>
       <p class="settings__header accent">il mio profilo</p>
       <div class="settings__container">
         <div class="settings__options">
-          <p class="settings__option">tema</p>
-          <p class="settings__option">lingua</p>
-          <p class="settings__option">suoni e volume</p>
-          <p class="settings__option">dimensione interfaccia</p>
-          <p class="settings__option">dimensioni carattere</p>
-          <p class="settings__option">Luminosità</p>
-          <p class="settings__option">Aggiornamento</p>
+          <div class="settings__option">tema scuro</div>
+          <div class="settings__option">lingua</div>
+          <div class="settings__option">suoni e volume</div>
+          <div class="settings__option">dimensione interfaccia</div>
+          <div class="settings__option">dimensioni carattere</div>
+          <div class="settings__option">Luminosità</div>
+          <div class="settings__option">Aggiornamento</div>
         </div>
+        
         <div class="settings__values">
-          <p class="settings__value">chiaro</p>
-          <p class="settings__value">italiano</p>
-          <p class="settings__value">suoni abilitati</p>
-          <p class="settings__value">media</p>
-          <p class="settings__value">media</p>
-          <p class="settings__value">100%</p>
-          <p class="settings__value">0.0.1 Pre Alpha</p>
+          <div class="settings__value toggle">
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider"></span> </label
+            ><br /><br />
+          </div>
+          <div class="settings__value"><p>italiano</p></div>
+          <div class="settings__value">
+            <input type="range" id="volume" name="volume" min="0" max="11" />
+          </div>
+          <div class="settings__value">
+            <select name="interfaccia" id="interfaccia">    
+              <option value="cat">Media</option>
+              <option value="piccola">Piccola</option>
+              <option value="Grande">Grande</option>
+            </select>         
+          </div>
+          <div class="settings__value">
+            <select name="carattere" id="carattere">    
+              <option value="cat">Media</option>
+              <option value="piccola">Piccola</option>
+              <option value="Grande">Grande</option>
+            </select>
+          </div>
+          <div class="settings__value">
+            <input type="range" id="volume" name="volume" min="0" max="11" />
+          </div>
+          <div class="settings__value"><p>0.0.1 Pre Alpha</p></div>
         </div>
       </div>
     </section>
+
+
   </body>
 </html>
