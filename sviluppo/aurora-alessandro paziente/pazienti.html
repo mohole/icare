@@ -3,8 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>prova</title>
+    <!-- X-UA per compatibilità di alcuni aspetti di internet explorer-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- autore del sito-->
+    <meta name="author" content="WEB2A">
+    <!--meta description-->
+    <meta name="description" content="School Workshop - prototype of a dashboard medical web application">
+    <!--meta keywords-->
+    <meta name="keywords" content="healthcare, dashboard, hospital, departments">
+    <!--favicon simbolino vicino al nome del sito nella barra in alto della scheda-->
+    <link rel="icon" href="inc/img/favicon.png" type="image/png" alt="i-care favicon"> 
+
+    <title>I-Care - Pazienti</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,18 +30,18 @@
         <div class="dash-menu">
             <!-- LOGO -->
             <div class="logo">
-                <img src="img/logo.png" alt="I-CARE">
+                <a href="#index.html" alt="logo i-care"><img src="img/logo.png" alt="logo_icare"></a>
             </div>
             <!-- CONTENUTO MENU -->
             <div class="nav">
                 <nav>
                     <ul>
-                        <li><a href="#dashboard.html"><i class="far fa-clipboard"></i> Dashboard</a></li>
-                        <li id="active"><a href="#pazienti.html"><i class="fas fa-user-injured"></i> Pazienti</a></li>
-                        <li><a href="#reparti.html"><i class="far fa-building"></i> Reparti</a></li>
-                        <li><a href="#chat.html"><i class="far fa-comments"></i> Chat</a></li>
-                        <li><a href="#impostazioni.html"><i class="fas fa-cog"></i> Impostazioni</a></li>
-                        <li><a href="#supporto.html"><i class="far fa-question-circle"></i> Supporto</a></li>
+                        <li><a href="#dashboard.html" alt="Dashboard"><i class="far fa-clipboard"></i> Dashboard</a></li>
+                        <li id="active"><a href="pazienti.html" alt="Pazienti"><i class="fas fa-user-injured"></i> Pazienti</a></li>
+                        <li><a href="#reparti.html" alt="Reparti"><i class="far fa-building"></i> Reparti</a></li>
+                        <li><a href="#chat.html" alt="Chat"><i class="far fa-comments"></i> Chat</a></li>
+                        <li><a href="#impostazioni.html" alt="Impostazioni"><i class="fas fa-cog"></i> Impostazioni</a></li>
+                        <li><a href="#supporto.html" alt="Supporto"><i class="far fa-question-circle"></i> Supporto</a></li>
                     </ul>
                 </nav>
             </div>
