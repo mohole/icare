@@ -1,3 +1,6 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
 .settings .settings__header, .settings .settings__option {
   text-transform: uppercase;
   font-weight: 800;
@@ -31,6 +34,64 @@
   padding-left: 2.5rem;
 }
 
+.settings .toggle {
+  height: 30px;
+}
+
+.settings .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.settings .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.settings .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.settings .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.settings input:checked + .slider {
+  background-color: #2196f3;
+}
+
+.settings input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+.settings input:checked + .slider:before {
+  transform: translateX(26px);
+  border-radius: 50%;
+}
+
+.settings .slider.round {
+  border-radius: 34px;
+}
+
 .accent {
   color: #18b1a8;
 }
@@ -43,7 +104,11 @@
 
 .settings {
   max-width: 1000px;
-  margin-left: 20rem;
-  margin-top: 7rem;
+  margin-left: 30%;
+  margin-top: 5%;
+}
+select {
+  border-radius: 10px 10px 10px 10px;
+  height: 25px;
 }
 /*# sourceMappingURL=index.css.map */
