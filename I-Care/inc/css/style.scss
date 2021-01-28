@@ -1,0 +1,428 @@
+@import 'reset';
+@import 'variables';
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    position: relative;
+   
+}
+
+.dash-menu{
+    position: fixed;
+    height: 100vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    .logo:hover{
+        opacity: 0.9;
+        transition: all 0.5s ease;
+    }
+    nav{
+        ul{
+            li {
+                list-style: none; 
+                padding: 15px;
+                    
+                a {
+                    color: #747474;
+                    font-size: 18px;
+                    text-decoration: none;
+                }
+                &:hover{
+                    font-weight: bold;
+                    transition: all 0.5s ease;
+                }
+            }
+            #active{
+                color: $black;
+                background-color: #6e6dc23b;
+                border-radius: 5px;
+            } 
+        }
+    }
+}
+
+.dash-content{
+    padding: 30px 30px 30px 230px;
+    .line-report{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        div{
+            color: #18B1A8;
+            display: flex;
+            text-transform: uppercase;
+
+            p{
+                font-weight: bold;
+            }
+
+            a{
+                color: gray;
+                margin-left:10px;
+                text-decoration: none;
+                &:hover{
+                color: $black;
+                }
+            }
+            
+        }
+    }
+    .c-main-ecg{
+        display: grid;
+        grid-template-columns: 5fr 7fr;
+        gap: 20px;
+        background-color: $primary-blu;
+        padding: 30px;
+        border-radius: 30px;        
+        .main-ecg {
+            
+            div{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 3px 0px;
+                p{
+                    color:$white;
+                    font-size: 50px;
+                    display: flex;
+                    align-items: center;
+                    font-weight: bold;
+                    small{
+                        font-size: 20px;
+                        padding: 0px 10px;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    color: $white;
+                } 
+
+                .dismiss:hover{
+                    opacity: 0.8;
+                    transition: all 0.5s ease;
+                }
+            }
+            .hr{
+                p{
+                    color: $primary-green;
+                    font-size: 60px;
+                }    
+                border-bottom: 1px solid $white;
+            }
+            .spo{
+                p{
+                    color: $primary-cyan;
+                    font-size: 60px;
+                }
+                border-bottom: 1px solid $white;
+            }
+            .resp{
+                p{
+                    color: $primary-yellow;
+                    font-size: 60px;
+                }
+                border-bottom: 1px solid $white;
+            }
+            .n{
+               margin-top: 20px;
+               text-align: center;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               color: white;
+               flex-direction: column;
+               span:nth-child(1) {
+                   font-size: 48px;
+                   line-height: 56px;
+               }
+               span:nth-child(2) {
+                font-size: 36px;
+                line-height: 40px;
+            }
+            }
+
+        }
+        .display{
+            background-color: $white;
+            height: 100%;
+            width: 100%;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
+
+    // piccoli schermi
+    .container-monitors{
+        
+        .valori{
+            .testi{
+            font-size: 20px;
+            }
+            .numero{
+                font-size: 60px;
+            }
+        } 
+        // grid areas nomi
+        .ventilazione-pressometrica{ 
+            margin: 20px 0 0 0;
+            border-radius: 20px;
+            grid-area: ventilazione-pressometrica;
+            background-color: $c-little-monitors;
+            color: $valori-ventilazione;
+            .vpcontent {
+                margin: 0 auto;
+                display: -ms-grid;
+                display: grid;
+                -ms-grid-columns: 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+                gap: 5px;
+                /* width: 70%; */
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                color: $valori-ventilazione;
+                text-align: center;
+            }
+
+        }
+        .pompa-infusionale{ 
+            margin: 20px 0 0 0;
+            border-radius: 20px;
+            grid-area: pompa-infusionale;
+            background-color: $c-little-monitors-two;
+            .title{
+                    color: $valori;
+                }
+                .valori{
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 5px;
+                width: 70%;
+                align-items: center;
+                 color: $valori;
+                .testi{
+                    font-size: 20px;
+                }
+                .numero{
+                    font-size:60px;
+                }
+                
+            }
+        }
+        .ossigeno{ 
+            margin: 20px 0 0 0;
+            border-radius: 20px;
+            grid-area: ossigeno; 
+            background-color: $c-little-monitors-three;
+            color: $valori-ossigeno;
+            .vpcontent {
+                margin: 0 auto;
+                display: -ms-grid;
+                display: grid;
+                -ms-grid-columns: 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+                gap: 5px;
+                /* width: 70%; */
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                color: $valori-ossigeno;
+                text-align: center;
+            }
+        }
+
+        .title{
+            display: flex;
+            padding: 10px;
+            align-items: center;
+                img{
+                            max-width: 40px;
+                            margin: 0 10px 0 0;
+                }
+                h4{
+                    font-size: 26px
+                }
+
+        }
+
+    }
+
+    
+}
+
+.dash-sidebar{
+    padding: 40px;
+    background-color: rgba(210, 210, 210, 0.171);
+    .profilo{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    hr{
+        background-color: #cfcaca;
+        width: 100%;
+        height: 1px;
+    }
+    .title{
+        font-weight: bold;
+        font-size: 24px;
+        color: #316EFF;
+    }
+    p{
+        text-align: justify;
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    button{
+        background-color: $primary-blu;
+        border-radius: 25px;
+        color: $white;
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin-top: 10px;
+        outline: none;
+            &:hover{
+                opacity: 0.9;
+                transition: all 0.5s ease;
+            }
+    }
+    
+}
+
+@media (max-width: 1200px){
+    .dash-sidebar{
+        display: none;
+    }
+    .dash-content{
+        width: 100%;
+    }
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1050px){
+    .container-monitors{
+        margin: 10px 0 0 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "ventilazione-pressometrica ventilazione-pressometrica"
+        "pompa-infusionale ossigeno";
+        column-gap: 20px;
+        .ventilazione-pressometrica, .pompa-infusionale, .ossigeno{
+            margin: 0;
+        }
+    }
+}
+
+// reparti
+
+body.reparto{
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    display: block;
+
+}
+
+.reparti{
+    width: 100%;
+    height: 100%;
+    padding: 40px 60px 60px 300px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "pediatria pediatria"
+        "neurologia cardiologia";
+        column-gap: 20px;
+        color: $white;
+    .pediatria{
+        padding: 20px;
+        height: 250px;
+        border-radius: 20px;
+        grid-area: pediatria;
+        background-color: $primary-blu;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        &:hover{
+            opacity: 0.9;
+            transition: all ease 0.5s;
+            cursor: pointer;
+        }
+        h4{
+           font-size: 30px;
+            
+        }
+        
+    }
+    .cardiologia{
+        padding: 20px;
+        height: 250px;
+        border-radius: 20px;
+        margin: 20px 0 0 0;
+        grid-area: cardiologia;
+        background-color: $primary-blu;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        &:hover{
+            opacity: 0.9;
+            transition: all ease 0.5s;
+            cursor: pointer;
+        }
+        h4{
+            font-size: 30px;
+             
+         }
+        
+    }
+    .neurologia{
+        padding: 20px;
+        height: 250px;
+        border-radius: 20px;
+        margin: 20px 0 0 0;
+        grid-area: neurologia;
+        background-color: $primary-blu;
+         display: flex;
+        align-items: center; 
+        justify-content: center;
+        &:hover{
+            opacity: 0.9;
+            transition: all ease 0.5s;
+            cursor: pointer;
+        }
+        h4{
+            font-size: 30px;
+             
+         }
+        
+    }
+}
+
+@media (max-width: 1050px){
+    .reparti{
+        width: 100%;
+        height: 100%;
+        padding: 40px 60px 60px 300px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "pediatria"
+            "neurologia"
+            "cardiologia";
+            column-gap: 20px;
+    }
+}

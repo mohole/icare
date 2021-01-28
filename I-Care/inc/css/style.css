@@ -1,0 +1,540 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  position: relative;
+}
+
+.dash-menu {
+  position: fixed;
+  height: 100vh;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.dash-menu .logo:hover {
+  opacity: 0.9;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.dash-menu nav ul li {
+  list-style: none;
+  padding: 15px;
+}
+
+.dash-menu nav ul li a {
+  color: #747474;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.dash-menu nav ul li:hover {
+  font-weight: bold;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.dash-menu nav ul #active {
+  color: black;
+  background-color: #6e6dc23b;
+  border-radius: 5px;
+}
+
+.dash-content {
+  padding: 30px 30px 30px 230px;
+}
+
+.dash-content .line-report {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.dash-content .line-report div {
+  color: #18B1A8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+}
+
+.dash-content .line-report div p {
+  font-weight: bold;
+}
+
+.dash-content .line-report div a {
+  color: gray;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.dash-content .line-report div a:hover {
+  color: black;
+}
+
+.dash-content .c-main-ecg {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 7fr;
+      grid-template-columns: 5fr 7fr;
+  gap: 20px;
+  background-color: #0066FF;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.dash-content .c-main-ecg .main-ecg div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3px 0px;
+}
+
+.dash-content .c-main-ecg .main-ecg div p {
+  color: white;
+  font-size: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+
+.dash-content .c-main-ecg .main-ecg div p small {
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+.dash-content .c-main-ecg .main-ecg div a {
+  text-decoration: none;
+  color: white;
+}
+
+.dash-content .c-main-ecg .main-ecg div .dismiss:hover {
+  opacity: 0.8;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.dash-content .c-main-ecg .main-ecg .hr {
+  border-bottom: 1px solid white;
+}
+
+.dash-content .c-main-ecg .main-ecg .hr p {
+  color: #02FD05;
+  font-size: 60px;
+}
+
+.dash-content .c-main-ecg .main-ecg .spo {
+  border-bottom: 1px solid white;
+}
+
+.dash-content .c-main-ecg .main-ecg .spo p {
+  color: #06FAF8;
+  font-size: 60px;
+}
+
+.dash-content .c-main-ecg .main-ecg .resp {
+  border-bottom: 1px solid white;
+}
+
+.dash-content .c-main-ecg .main-ecg .resp p {
+  color: #FCFC03;
+  font-size: 60px;
+}
+
+.dash-content .c-main-ecg .main-ecg .n {
+  margin-top: 20px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.dash-content .c-main-ecg .main-ecg .n span:nth-child(1) {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.dash-content .c-main-ecg .main-ecg .n span:nth-child(2) {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.dash-content .c-main-ecg .display {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.dash-content .container-monitors .valori .testi {
+  font-size: 20px;
+}
+
+.dash-content .container-monitors .valori .numero {
+  font-size: 60px;
+}
+
+.dash-content .container-monitors .ventilazione-pressometrica {
+  margin: 20px 0 0 0;
+  border-radius: 20px;
+  grid-area: ventilazione-pressometrica;
+  background-color: #E5F2F6;
+  color: #0066FF;
+}
+
+.dash-content .container-monitors .ventilazione-pressometrica .vpcontent {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  /* width: 70%; */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #0066FF;
+  text-align: center;
+}
+
+.dash-content .container-monitors .pompa-infusionale {
+  margin: 20px 0 0 0;
+  border-radius: 20px;
+  grid-area: pompa-infusionale;
+  background-color: #EAF0FF;
+}
+
+.dash-content .container-monitors .pompa-infusionale .title {
+  color: #6F6DC2;
+}
+
+.dash-content .container-monitors .pompa-infusionale .valori {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  width: 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #6F6DC2;
+}
+
+.dash-content .container-monitors .pompa-infusionale .valori .testi {
+  font-size: 20px;
+}
+
+.dash-content .container-monitors .pompa-infusionale .valori .numero {
+  font-size: 60px;
+}
+
+.dash-content .container-monitors .ossigeno {
+  margin: 20px 0 0 0;
+  border-radius: 20px;
+  grid-area: ossigeno;
+  background-color: #F0FBF2;
+  color: #18b1a8;
+}
+
+.dash-content .container-monitors .ossigeno .vpcontent {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  /* width: 70%; */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #18b1a8;
+  text-align: center;
+}
+
+.dash-content .container-monitors .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dash-content .container-monitors .title img {
+  max-width: 40px;
+  margin: 0 10px 0 0;
+}
+
+.dash-content .container-monitors .title h4 {
+  font-size: 26px;
+}
+
+.dash-sidebar {
+  padding: 40px;
+  background-color: rgba(210, 210, 210, 0.171);
+}
+
+.dash-sidebar .profilo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.dash-sidebar hr {
+  background-color: #cfcaca;
+  width: 100%;
+  height: 1px;
+}
+
+.dash-sidebar .title {
+  font-weight: bold;
+  font-size: 24px;
+  color: #316EFF;
+}
+
+.dash-sidebar p {
+  text-align: justify;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.dash-sidebar button {
+  background-color: #0066FF;
+  border-radius: 25px;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 10px;
+  outline: none;
+}
+
+.dash-sidebar button:hover {
+  opacity: 0.9;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 1200px) {
+  .dash-sidebar {
+    display: none;
+  }
+  .dash-content {
+    width: 100%;
+  }
+  body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1050px) {
+  .container-monitors {
+    margin: 10px 0 0 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "ventilazione-pressometrica ventilazione-pressometrica" "pompa-infusionale ossigeno";
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+  .container-monitors .ventilazione-pressometrica, .container-monitors .pompa-infusionale, .container-monitors .ossigeno {
+    margin: 0;
+  }
+}
+
+body.reparto {
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  display: block;
+}
+
+.reparti {
+  width: 100%;
+  height: 100%;
+  padding: 40px 60px 60px 300px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "pediatria pediatria" "neurologia cardiologia";
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  color: white;
+}
+
+.reparti .pediatria {
+  padding: 20px;
+  height: 250px;
+  border-radius: 20px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: pediatria;
+  background-color: #0066FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reparti .pediatria:hover {
+  opacity: 0.9;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+
+.reparti .pediatria h4 {
+  font-size: 30px;
+}
+
+.reparti .cardiologia {
+  padding: 20px;
+  height: 250px;
+  border-radius: 20px;
+  margin: 20px 0 0 0;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: cardiologia;
+  background-color: #0066FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reparti .cardiologia:hover {
+  opacity: 0.9;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+
+.reparti .cardiologia h4 {
+  font-size: 30px;
+}
+
+.reparti .neurologia {
+  padding: 20px;
+  height: 250px;
+  border-radius: 20px;
+  margin: 20px 0 0 0;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: neurologia;
+  background-color: #0066FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reparti .neurologia:hover {
+  opacity: 0.9;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+
+.reparti .neurologia h4 {
+  font-size: 30px;
+}
+
+@media (max-width: 1050px) {
+  .reparti {
+    width: 100%;
+    height: 100%;
+    padding: 40px 60px 60px 300px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "pediatria" "neurologia" "cardiologia";
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
