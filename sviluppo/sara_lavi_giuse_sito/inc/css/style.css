@@ -59,7 +59,7 @@ body {
 }
 
 .dash-content {
-  padding: 40px 60px 60px 300px;
+  padding: 30px 30px 30px 230px;
 }
 
 .dash-content .line-report {
@@ -73,6 +73,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .dash-content .line-report div {
@@ -100,11 +101,11 @@ body {
 .dash-content .c-main-ecg {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 5fr 7fr;
+      grid-template-columns: 5fr 7fr;
   gap: 20px;
   background-color: #0066FF;
-  padding: 50px;
+  padding: 30px;
   border-radius: 30px;
 }
 
@@ -118,16 +119,24 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 5px 0 5px 0;
+  padding: 3px 0px;
 }
 
 .dash-content .c-main-ecg .main-ecg div p {
   color: white;
   font-size: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
 }
 
 .dash-content .c-main-ecg .main-ecg div p small {
-  font-size: 25px;
+  font-size: 20px;
+  padding: 0px 10px;
 }
 
 .dash-content .c-main-ecg .main-ecg div a {
@@ -169,21 +178,32 @@ body {
 }
 
 .dash-content .c-main-ecg .main-ecg .n {
+  margin-top: 20px;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.dash-content .c-main-ecg .main-ecg .n .n-uno {
-  font-size: 45px;
+.dash-content .c-main-ecg .main-ecg .n span:nth-child(1) {
+  font-size: 48px;
+  line-height: 56px;
 }
 
-.dash-content .c-main-ecg .main-ecg .n p {
-  font-size: 30px;
+.dash-content .c-main-ecg .main-ecg .n span:nth-child(2) {
+  font-size: 36px;
+  line-height: 40px;
 }
 
 .dash-content .c-main-ecg .display {
@@ -191,6 +211,15 @@ body {
   height: 100%;
   width: 100%;
   border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .dash-content .container-monitors .valori .testi {
@@ -391,7 +420,6 @@ body.reparto {
   width: 100%;
   height: 100%;
   padding: 40px 60px 60px 300px;
-  margin: 10px 0 0 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -499,7 +527,6 @@ body.reparto {
     width: 100%;
     height: 100%;
     padding: 40px 60px 60px 300px;
-    margin: 10px 0 0 0;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;

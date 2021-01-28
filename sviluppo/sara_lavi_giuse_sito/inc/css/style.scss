@@ -46,11 +46,12 @@ body{
 }
 
 .dash-content{
-    padding: 40px 60px 60px 300px;
+    padding: 30px 30px 30px 230px;
     .line-report{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: 10px;
         div{
             color: #18B1A8;
             display: flex;
@@ -73,23 +74,27 @@ body{
     }
     .c-main-ecg{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 5fr 7fr;
         gap: 20px;
         background-color: $primary-blu;
-        padding: 50px;
+        padding: 30px;
         border-radius: 30px;        
-        .main-ecg{
+        .main-ecg {
             
             div{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding: 5px 0 5px 0;
+                padding: 3px 0px;
                 p{
                     color:$white;
                     font-size: 50px;
+                    display: flex;
+                    align-items: center;
+                    font-weight: bold;
                     small{
-                        font-size: 25px;
+                        font-size: 20px;
+                        padding: 0px 10px;
                     }
                 }
                 a{
@@ -124,14 +129,21 @@ body{
                 border-bottom: 1px solid $white;
             }
             .n{
-                display: flex;
-                flex-direction: column;
-                .n-uno{
-                    font-size: 45px;
-                }
-               p{
-                   font-size: 30px;
+               margin-top: 20px;
+               text-align: center;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               color: white;
+               flex-direction: column;
+               span:nth-child(1) {
+                   font-size: 48px;
+                   line-height: 56px;
                }
+               span:nth-child(2) {
+                font-size: 36px;
+                line-height: 40px;
+            }
             }
 
         }
@@ -139,7 +151,10 @@ body{
             background-color: $white;
             height: 100%;
             width: 100%;
-            border-radius: 20px; 
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
         }
     }
 
@@ -326,7 +341,6 @@ body.reparto{
     width: 100%;
     height: 100%;
     padding: 40px 60px 60px 300px;
-    margin: 10px 0 0 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
@@ -403,7 +417,6 @@ body.reparto{
         width: 100%;
         height: 100%;
         padding: 40px 60px 60px 300px;
-        margin: 10px 0 0 0;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-areas: 
