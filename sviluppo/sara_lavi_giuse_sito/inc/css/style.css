@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: Poppins, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 3fr 1fr;
@@ -411,7 +411,7 @@ body {
 }
 
 body.reparto {
-  font-family: Poppins, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   height: 100%;
   display: block;
 }
@@ -427,6 +427,7 @@ body.reparto {
       grid-template-areas: "pediatria pediatria" "neurologia cardiologia";
   -webkit-column-gap: 20px;
           column-gap: 20px;
+  color: white;
 }
 
 .reparti .pediatria {
@@ -437,7 +438,7 @@ body.reparto {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: pediatria;
-  background-color: #6F6DC2;
+  background-color: #0066FF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -468,7 +469,7 @@ body.reparto {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: cardiologia;
-  background-color: #6F6DC2;
+  background-color: #0066FF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,7 +500,7 @@ body.reparto {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: neurologia;
-  background-color: #6F6DC2;
+  background-color: #0066FF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
