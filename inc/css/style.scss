@@ -88,12 +88,12 @@ body{
                 padding: 3px 0px;
                 p{
                     color:$white;
-                    font-size: 50px;
+                    font-size: 30px;
                     display: flex;
                     align-items: center;
                     font-weight: bold;
                     small{
-                        font-size: 20px;
+                        font-size: 15px;
                         padding: 0px 10px;
                     }
                 }
@@ -110,21 +110,21 @@ body{
             .hr{
                 p{
                     color: $primary-green;
-                    font-size: 60px;
+                    font-size: 30px;
                 }    
                 border-bottom: 1px solid $white;
             }
             .spo{
                 p{
                     color: $primary-cyan;
-                    font-size: 60px;
+                    font-size: 30px;
                 }
                 border-bottom: 1px solid $white;
             }
             .resp{
                 p{
                     color: $primary-yellow;
-                    font-size: 60px;
+                    font-size: 30px;
                 }
                 border-bottom: 1px solid $white;
             }
@@ -137,11 +137,11 @@ body{
                color: white;
                flex-direction: column;
                span:nth-child(1) {
-                   font-size: 48px;
+                   font-size: 38px;
                    line-height: 56px;
                }
                span:nth-child(2) {
-                font-size: 36px;
+                font-size: 28px;
                 line-height: 40px;
             }
             }
@@ -163,10 +163,10 @@ body{
         
         .valori{
             .testi{
-            font-size: 20px;
+            font-size: 14px;
             }
             .numero{
-                font-size: 60px;
+                font-size: 30px;
             }
         } 
         // grid areas nomi
@@ -209,10 +209,10 @@ body{
                 align-items: center;
                  color: $valori;
                 .testi{
-                    font-size: 20px;
+                    font-size: 15px;
                 }
                 .numero{
-                    font-size:60px;
+                    font-size:30px;
                 }
                 
             }
@@ -248,7 +248,7 @@ body{
                             margin: 0 10px 0 0;
                 }
                 h4{
-                    font-size: 26px
+                    font-size: 18px
                 }
 
         }
@@ -273,12 +273,12 @@ body{
     }
     .title{
         font-weight: bold;
-        font-size: 24px;
+        font-size: 16px;
         color: #316EFF;
     }
     p{
         text-align: justify;
-        font-size: 14px;
+        font-size: 12px;
         margin: 10px 0;
     }
 
@@ -289,7 +289,7 @@ body{
         padding: 15px;
         text-align: center;
         text-decoration: none;
-        font-size: 16px;
+        font-size: 13px;
         margin-top: 10px;
         outline: none;
             &:hover{
@@ -363,7 +363,7 @@ body.reparto{
             cursor: pointer;
         }
         h4{
-           font-size: 30px;
+           font-size: 20px;
             
         }
         
@@ -405,7 +405,7 @@ body.reparto{
             cursor: pointer;
         }
         h4{
-            font-size: 30px;
+            font-size: 20px;
              
          }
         

@@ -124,7 +124,7 @@ body {
 
 .dash-content .c-main-ecg .main-ecg div p {
   color: white;
-  font-size: 50px;
+  font-size: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,7 +135,7 @@ body {
 }
 
 .dash-content .c-main-ecg .main-ecg div p small {
-  font-size: 20px;
+  font-size: 15px;
   padding: 0px 10px;
 }
 
@@ -156,7 +156,7 @@ body {
 
 .dash-content .c-main-ecg .main-ecg .hr p {
   color: #02FD05;
-  font-size: 60px;
+  font-size: 30px;
 }
 
 .dash-content .c-main-ecg .main-ecg .spo {
@@ -165,7 +165,7 @@ body {
 
 .dash-content .c-main-ecg .main-ecg .spo p {
   color: #06FAF8;
-  font-size: 60px;
+  font-size: 30px;
 }
 
 .dash-content .c-main-ecg .main-ecg .resp {
@@ -174,7 +174,7 @@ body {
 
 .dash-content .c-main-ecg .main-ecg .resp p {
   color: #FCFC03;
-  font-size: 60px;
+  font-size: 30px;
 }
 
 .dash-content .c-main-ecg .main-ecg .n {
@@ -197,12 +197,12 @@ body {
 }
 
 .dash-content .c-main-ecg .main-ecg .n span:nth-child(1) {
-  font-size: 48px;
+  font-size: 38px;
   line-height: 56px;
 }
 
 .dash-content .c-main-ecg .main-ecg .n span:nth-child(2) {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 40px;
 }
 
@@ -223,11 +223,11 @@ body {
 }
 
 .dash-content .container-monitors .valori .testi {
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .dash-content .container-monitors .valori .numero {
-  font-size: 60px;
+  font-size: 30px;
 }
 
 .dash-content .container-monitors .ventilazione-pressometrica {
@@ -279,11 +279,11 @@ body {
 }
 
 .dash-content .container-monitors .pompa-infusionale .valori .testi {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .dash-content .container-monitors .pompa-infusionale .valori .numero {
-  font-size: 60px;
+  font-size: 30px;
 }
 
 .dash-content .container-monitors .ossigeno {
@@ -325,7 +325,7 @@ body {
 }
 
 .dash-content .container-monitors .title h4 {
-  font-size: 26px;
+  font-size: 18px;
 }
 
 .dash-sidebar {
@@ -351,13 +351,13 @@ body {
 
 .dash-sidebar .title {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 16px;
   color: #316EFF;
 }
 
 .dash-sidebar p {
   text-align: justify;
-  font-size: 14px;
+  font-size: 12px;
   margin: 10px 0;
 }
 
@@ -368,7 +368,7 @@ body {
   padding: 15px;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 13px;
   margin-top: 10px;
   outline: none;
 }
@@ -401,7 +401,7 @@ body {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "ventilazione-pressometrica ventilazione-pressometrica" "pompa-infusionale ossigeno";
+        grid-template-areas: "ventilazione-pressometrica ventilazione-pressometrica" "pompa-infusionale ossigeno";
     -webkit-column-gap: 20px;
             column-gap: 20px;
   }
@@ -424,7 +424,7 @@ body.reparto {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-      grid-template-areas: "pediatria pediatria" "neurologia cardiologia";
+      grid-template-areas: "pediatria pediatria" "neurologia cardiologia";
   -webkit-column-gap: 20px;
           column-gap: 20px;
   color: white;
@@ -458,7 +458,7 @@ body.reparto {
 }
 
 .reparti .pediatria h4 {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .reparti .cardiologia {
@@ -520,7 +520,7 @@ body.reparto {
 }
 
 .reparti .neurologia h4 {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 @media (max-width: 1050px) {
@@ -532,7 +532,7 @@ body.reparto {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: "pediatria" "neurologia" "cardiologia";
+        grid-template-areas: "pediatria" "neurologia" "cardiologia";
     -webkit-column-gap: 20px;
             column-gap: 20px;
   }

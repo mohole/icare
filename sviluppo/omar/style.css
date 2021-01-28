@@ -6,7 +6,7 @@
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 2em 2em;
-      grid-template-areas: "menu parametri parametri paziente" "menu parametri parametri paziente" "menu parametri2 parametri2 paziente" "menu parametri3 parametri4 paziente";
+      grid-template-areas: "menu parametri parametri paziente" "menu parametri parametri paziente" "menu parametri2 parametri2 paziente" "menu parametri3 parametri4 paziente";
 }
 
 .menu {

@@ -401,7 +401,7 @@ body {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "ventilazione-pressometrica ventilazione-pressometrica" "pompa-infusionale ossigeno";
+        grid-template-areas: "ventilazione-pressometrica ventilazione-pressometrica" "pompa-infusionale ossigeno";
     -webkit-column-gap: 20px;
             column-gap: 20px;
   }
@@ -424,7 +424,7 @@ body.reparto {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-      grid-template-areas: "pediatria pediatria" "neurologia cardiologia";
+      grid-template-areas: "pediatria pediatria" "neurologia cardiologia";
   -webkit-column-gap: 20px;
           column-gap: 20px;
   color: white;
@@ -532,7 +532,7 @@ body.reparto {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: "pediatria" "neurologia" "cardiologia";
+        grid-template-areas: "pediatria" "neurologia" "cardiologia";
     -webkit-column-gap: 20px;
             column-gap: 20px;
   }
