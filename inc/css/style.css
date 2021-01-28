@@ -227,7 +227,7 @@ body {
 }
 
 .dash-content .container-monitors .valori .numero {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .dash-content .container-monitors .ventilazione-pressometrica {
@@ -313,7 +313,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px;
+  padding: 10px 10px 0 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -396,7 +396,6 @@ body {
 
 @media (min-width: 1050px) {
   .container-monitors {
-    margin: 10px 0 0 0;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
