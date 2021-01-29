@@ -125,4 +125,46 @@ select {
   margin-left: 30%;
   margin-top: 5%;
 }
+
+.dash-menu {
+  position: fixed;
+  height: 100vh;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.dash-menu .logo:hover {
+  opacity: 0.9;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.dash-menu nav ul li {
+  list-style: none;
+  padding: 15px;
+}
+
+.dash-menu nav ul li a {
+  color: #747474;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.dash-menu nav ul li:hover {
+  font-weight: bold;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.dash-menu nav ul #active {
+  color: #000000;
+  background-color: #6e6dc23b;
+  border-radius: 5px;
+}
 /*# sourceMappingURL=index.css.map */

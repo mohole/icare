@@ -3,9 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Workshop</title>
+    <title>Impostazioni</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    <link rel="icon" href="../../sara_lavi_giuse_sito/inc/img/favicon.png" type="image/png" alt="i-care favicon"> 
+    <style>
+      .dash-menu {
+  position: fixed;
+  height: 100vh;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+          margin-top: -3em;
+}
+
+.dash-menu .logo:hover {
+  opacity: 0.9;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.dash-menu nav ul li {
+  list-style: none;
+  padding: 15px;
+}
+
+.dash-menu nav ul li a {
+  color: #747474;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.dash-menu nav ul li:hover {
+  font-weight: bold;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.dash-menu nav ul #active {
+  color: black;
+  background-color: #6e6dc23b;
+  border-radius: 5px;
+}
+    </style>
   </head>
   <body>
     <div class="dash-menu">
@@ -15,21 +61,24 @@
       </div>
 
       <div class="dash-menu">
+
         <div class="logo">
-            <a href="index.html" alt="logo i-care"><img src="inc/img/logo.png" alt="logo_icare"></a>
+            <a href="index.html" alt="logo i-care"><img src="inc/logo.png" alt="logo_icare"></a>
         </div>
+
         <div class="nav">
             <nav>
                 <ul>
-                    <li id="active"><a href="index.html" alt="Dashboard"><i class="far fa-clipboard"></i> Dashboard</a></li>
-                    <li><a href="#pazienti.html" alt="Pazienti"><i class="fas fa-user-injured"></i> Pazienti</a></li>
-                    <li><a href="reparti.html" alt="Reparti"><i class="far fa-building"></i> Reparti</a></li>
-                    <li><a href="#chat.html" alt="Chat"><i class="far fa-comments"></i> Chat</a></li>
+                    <li id="active"><a href="../../sara_lavi_giuse_sito/index.html" alt="Dashboard"><i class="far fa-clipboard"></i> Dashboard</a></li>
+                    <li><a href="../../aurora-alessandro-paziente/pazienti.html" alt="Pazienti"><i class="fas fa-user-injured"></i> Pazienti</a></li>
+                    <li><a href="../../sara_lavi_giuse_sito/reparti.html" alt="Reparti"><i class="far fa-building"></i> Reparti</a></li>
+                    <li><a href="../../sara_lavi_giuse_sito/404.html" alt="Chat"><i class="far fa-comments"></i> Chat</a></li>
                     <li><a href="#impostazioni.html" alt="Impostazioni"><i class="fas fa-cog"></i> Impostazioni</a></li>
-                    <li><a href="#supporto.html" alt="Supporto"><i class="far fa-question-circle"></i> Supporto</a></li>
+                    <li><a href="../../pagina_supporto/index.html" alt="Supporto"><i class="far fa-question-circle"></i> Supporto</a></li>
                 </ul>
             </nav>
         </div>
+
     </div>
 
   </div>

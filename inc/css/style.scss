@@ -166,7 +166,7 @@ body{
             font-size: 14px;
             }
             .numero{
-                font-size: 28px;
+                font-size: 30px;
             }
         } 
         // grid areas nomi
@@ -241,7 +241,7 @@ body{
 
         .title{
             display: flex;
-            padding: 10px 10px 0 10px;
+            padding: 10px;
             align-items: center;
                 img{
                             max-width: 40px;
@@ -315,7 +315,7 @@ body{
 
 @media (min-width: 1050px){
     .container-monitors{
-        // margin: 10px 0 0 0;
+        margin: 10px 0 0 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
